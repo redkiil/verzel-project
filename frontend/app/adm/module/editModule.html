@@ -1,0 +1,17 @@
+<div class="container">
+    <div ng-include="'../adm/menu/menu.html'"></div>
+    <md-content class="content">
+      <div ng-controller="editModuleCtrl" layout="column" ng-cloak class="md-inline-form">
+        Editando modulo: {{data.oldname}}
+        <md-contentlayout-gt-sm="row" layout-padding>
+          <div>
+            <md-input-container>
+              <label>Nome</label>
+              <input ng-model="data.name">
+            </md-input-container>
+            <md-button class="md-primary md-raised" ng-click="updateModule(data.id)">SALVAR</md-button>
+            <md-button class="md-warn md-raised" ng-click="deleteModule(data.id)">EXCLUIR</md-button>
+          </div>
+        </md-content>
+    </md-content>
+</div>

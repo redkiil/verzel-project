@@ -1,0 +1,13 @@
+.container{
+    background-color: red;
+    display: flex;
+}
+.content{
+    width: 90vw;
+    margin: 2px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.md-warn{
+    background-color: red;
+}

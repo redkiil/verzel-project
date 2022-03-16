@@ -1,0 +1,17 @@
+<div class="container">
+    <div ng-include="'../adm/menu/menu.html'"></div>
+    <md-content class="content">
+        <h1>AULAS</h1>
+        <table>
+            <tr>
+              <th>Modulo</th>
+              <th>Quantidade de Aulas</th>
+            </tr>
+            <tr ng-repeat="item in moduless">
+              <td>{{item.name}}</td>
+              <td>{{item.classes.length}}</td>
+              <td><md-button class="md-primary md-raised" href="#!/painel/classe/{{item.name}}">VISUALIZAR AULAS</md-button></td>
+            </tr>
+          </table>
+    </md-content>
+</div>

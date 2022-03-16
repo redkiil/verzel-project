@@ -1,0 +1,16 @@
+<div class="container">
+    <div ng-include="'../adm/menu/menu.html'"></div>
+    <md-content class="content">
+      <div ng-controller="createModuleCtrl" layout="column" ng-cloak class="md-inline-form">
+       Criando novo Modulo
+        <md-contentlayout-gt-sm="row" layout-padding>
+          <div>
+            <md-input-container>
+              <label>Nome</label>
+              <input ng-model="data.name">
+            </md-input-container>
+            <md-button class="md-primary md-raised" ng-click="createModule()">SALVAR</md-button>
+          </div>
+        </md-content>
+    </md-content>
+</div>

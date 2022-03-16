@@ -1,0 +1,24 @@
+<div class="container">
+  <div ng-include="'../adm/menu/menu.html'"></div>
+  <md-content class="content">
+    <div ng-controller="createClasseCtrl" layout="column" ng-cloak class="md-inline-form">
+      Criando nova Aula para Modulo: {{data.module.name}}
+      <md-contentlayout-gt-sm="row" layout-padding>
+        <div>
+          <md-input-container>
+            <label>Nome</label>
+            <input ng-model="data.name">
+          </md-input-container>
+          <md-input-container>
+            <label>Modulo</label>
+            <input ng-model="data.module.name">
+          </md-input-container>
+          <md-input-container>
+            <label>Data</label>
+            <input ng-model="data.date">
+          </md-input-container>
+          <md-button class="md-primary md-raised" ng-click="createClasse()">SALVAR</md-button>
+        </div>
+      </md-content>
+  </md-content>
+</div>

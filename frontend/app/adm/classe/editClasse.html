@@ -1,0 +1,26 @@
+<div class="container">
+  <div ng-include="'../adm/menu/menu.html'"></div>
+  <md-content class="content">
+    <div ng-controller="editClasseCtrl" layout="column" ng-cloak class="md-inline-form">
+      Editando Aula: {{oldname}} / Modulo: {{oldmodule}}
+      <md-contentlayout-gt-sm="row" layout-padding>
+        <div>
+          <md-input-container>
+            <label>Nome</label>
+            <input ng-model="data.name">
+          </md-input-container>
+          <md-input-container>
+            <label>Modulo</label>
+            <input ng-model="data.module.name">
+          </md-input-container>
+          <md-input-container>
+            <label>Data</label>
+            <input ng-model="data.date">
+          </md-input-container>
+          <md-button class="md-primary md-raised" ng-click="updateClasse(data._id)">SALVAR</md-button>
+          <md-button class="md-warn md-raised" ng-click="deleteClasse(data._id)">EXCLUIR</md-button>
+        </div>
+      </md-content>
+      </div>
+  </md-content>
+</div>

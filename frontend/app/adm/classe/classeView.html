@@ -1,0 +1,17 @@
+<div class="container">
+    <div ng-include="'../adm/menu/menu.html'"></div>
+    <md-content class="content" ng-controller="classeViewCtrl">
+        <h1>AULAS</h1>
+        <md-button class="md-primary md-raised" href="#!/painel/classe/create/{{id}}">NOVA AULA</md-button>
+        <h4>Modulo - {{id}}</h4>
+        <table>
+            <tr>
+              <th>Aula</th>
+            </tr>
+            <tr ng-repeat="item in classes">
+              <td>{{item.name}}</td>
+              <td><md-button class="md-primary md-raised" href="#!/painel/classe/edit/{{item._id}}">EDITAR</md-button></td>
+            </tr>
+          </table>
+    </md-content>
+</div>

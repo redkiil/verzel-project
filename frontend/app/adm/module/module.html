@@ -1,0 +1,17 @@
+<div class="container">
+    <div ng-include="'../adm/menu/menu.html'"></div>
+    <md-content class="content">
+      <md-button class="md-primary md-raised" href="#!/painel/module/create">CRIAR MODULO</md-button>
+        <table>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+            </tr>
+            <tr ng-repeat="item in moduless">
+              <td>{{item.id}}</td>
+              <td>{{item.name}}</td>
+              <td><md-button class="md-primary md-raised" href="#!/painel/module/edit/{{item.id}}/{{item.name}}">EDITAR</md-button></td>
+            </tr>
+          </table>
+    </md-content>
+</div>
