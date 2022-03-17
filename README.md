@@ -46,3 +46,6 @@ npm start
 Entre no link:
 
 http://localhost:8000/#!/painel/module
+
+Para criar uma Aula acesse pelo a menu "Aulas", acesse o modulo que deseja criar a aula.
+Insira os dados, requeridos. O Formato de data tem que ser inserido: DD/MM/YYYY HH:MM:SS
